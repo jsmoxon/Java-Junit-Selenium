@@ -2,7 +2,6 @@ package com.yourcompany.Tests;
 
 
 import com.yourcompany.Pages.*;
-import com.yourcompany.TestRules.Retry;
 import com.yourcompany.Tests.SampleSauceTestBase;
 import org.junit.Test;
 import org.openqa.selenium.InvalidElementStateException;
@@ -58,7 +57,6 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
      * @throws InvalidElementStateException
      */
     @Test
-    @Retry
     public void verifyCommentInputTest() throws InvalidElementStateException {
         String commentInputText = UUID.randomUUID().toString();
 
