@@ -2,7 +2,6 @@ package com.yourcompany.Tests;
 
 import com.saucelabs.common.SauceOnDemandAuthentication;
 
-import com.yourcompany.TestRules.RetryRule;
 import com.yourcompany.Utils.SauceHelpers;
 import org.junit.*;
 import org.junit.rules.TestName;
@@ -58,12 +57,6 @@ public class SampleSauceTestBase implements SauceOnDemandSessionIdProvider {
         		return String.format("%s", super.getMethodName());
         }
     };
-
-    /**
-     * Test decorated with @Retry will be run 3 times in case they fail using this rule.
-     */
-    @Rule
-    public RetryRule rule = new RetryRule(3);
 
     /**
      * Represents the browser to be used as part of the test run.
