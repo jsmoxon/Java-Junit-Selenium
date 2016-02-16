@@ -48,7 +48,7 @@
                     <parallel>classes</parallel>
                     <threadCount>40</threadCount>
 
-                    <redirectTestOutputToFile>false</redirectTestOutputToFile>
+                    <redirectTestOutputToFile>true</redirectTestOutputToFile>
                 </configuration>
                 <version>2.12.4</version>
             </plugin>
