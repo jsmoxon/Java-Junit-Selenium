@@ -48,7 +48,7 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
          Assertions should be part of test and not part of Page object.
          Each test should be verifying one piece of functionality (atomic testing)
         */
-        assertEquals(page.getEmailText(), emailInputText2);
+        assertEquals(page.getEmailText(), emailInputText);
 
     }
 
