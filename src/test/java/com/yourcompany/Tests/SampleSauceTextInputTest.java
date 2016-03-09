@@ -29,7 +29,7 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
     @Test
     public void verifyEmailInputTest() throws InvalidElementStateException {
         String emailInputText = "abc@gmail.com";
-        String emailInputText2 = "wrongemail@gmail.com";
+        String wrongInputText = "wrongemail@gmail.com";
 
 
         // Navigate to the page
@@ -42,13 +42,13 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
          enterEmailText page is an exposed "service",
              which interacts with the email input field element by sending text to it.
         */
-        page.enterEmailText(emailInputText);
+        page.enterEmailText(wrongInputText);
 
         /*
          Assertions should be part of test and not part of Page object.
          Each test should be verifying one piece of functionality (atomic testing)
         */
-        assertEquals(page.getEmailText(), emailInputText2);
+        assertEquals(page.getEmailText(), emailInputText);
 
     }
 
